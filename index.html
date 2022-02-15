@@ -13,18 +13,31 @@
     <link rel="stylesheet" href="CSS/normalize.css" />
   </head>
   <body>
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready to Get Started?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni facilis id, corporis eaque voluptas minima eveniet? Fugit, magnam
-            voluptatum!
-          </p>
-        </div>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
 
-        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        <svg style="color: white" class="icon icon--primary collapsible__chevron">
+          <use xlink:href="images/sprite-1.svg#wordpress"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat eius sint a rem quasi iste quidem sequi necessitatibus aspernatur.
       </div>
     </div>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+
+        <svg style="color: white" class="icon icon--primary collapsible__chevron">
+          <use xlink:href="images/sprite-1.svg#wordpress"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat eius sint a rem quasi iste quidem sequi necessitatibus aspernatur.
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
