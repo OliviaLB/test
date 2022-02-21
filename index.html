@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MOSHIFY - Go Online for just $9</title>
+    <meta name="description" content="Deploy your websites in less than 60s" />
+    <meta property="og:title" content="Moshify..." />
+    <meta property="og:description" content="Moshify..." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://" />
+    <meta property="og:URL" content="https://moshified.com" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -12,6 +19,7 @@
 
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -32,19 +40,19 @@
 
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">Deploy your websites in less than 60 seconds.</p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source type="image/webp" srcset="/images/banner.webp 1x, /images/banner@2x.webp 2x" />
           <source type="image/png" srcset="/images/banner.png 1x, /images/banner@2x.png 2x" />
           <img class="hero__image" src="/images/banner.png" alt=""
         /></picture>
       </div>
     </section>
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="zoom-in">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
 
@@ -71,7 +79,7 @@
       </ul>
     </section>
 
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -145,7 +153,7 @@
       </header>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite-1.svg#easy"></use>
@@ -158,14 +166,14 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source type="image/webp" srcset="/images/easy.webp 1x, /images/easy@2x.webp 2x" />
           <source type="image/jpg" srcset="/images/easy.jpg 1x, images/easy@2x.jpg 2x" />
           <img class="feature__image" src="/images/easy.jpg" alt="" />
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite-1.svg#computer"></use>
@@ -186,7 +194,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite-1.svg#wordpress"></use>
@@ -269,7 +277,7 @@
       </div>
     </section>
 
-    <div class="block">
+    <div class="block" data-aos="zoom-in">
       <div class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, veniam.</p>
@@ -309,16 +317,30 @@
       </div>
     </div>
 
+    <div class="callout callout--primary">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Ready to Get Started?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni facilis id, corporis eaque voluptas minima eveniet? Fugit, magnam
+            voluptatum!
+          </p>
+        </div>
+
+        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+      </div>
+    </div>
+
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Products</h2>
 
             <svg style="color: white" class="icon icon--primary collapsible__chevron">
               <use xlink:href="images/sprite-1.svg#wordpress"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Website Hosting</a></li>
@@ -329,13 +351,13 @@
         </section>
 
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
 
             <svg style="color: white" class="icon icon--primary collapsible__chevron">
               <use xlink:href="images/sprite-1.svg#wordpress"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -345,13 +367,13 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
 
             <svg style="color: white" class="icon icon--primary collapsible__chevron">
               <use xlink:href="images/sprite-1.svg#wordpress"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -361,13 +383,13 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Domains</h2>
 
             <svg style="color: white" class="icon icon--primary collapsible__chevron">
               <use xlink:href="images/sprite-1.svg#wordpress"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Checker</a></li>
@@ -377,12 +399,16 @@
           </div>
         </section>
 
-        <section class="footer__brand">
+        <div class="footer__brand">
           <img src="/images/logo.svg" alt="" />
           <p class="footer__copyright">Copyright 2022</p>
-        </section>
+        </div>
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

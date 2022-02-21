@@ -297,7 +297,7 @@ a {
   color: var(--color-heading);
   font-size: 2rem;
   outline: 0;
-  padding: 1.5 rem 3.5 rem;
+  padding: 1.5rem 3.5rem;
 }
 
 ::placeholder {
